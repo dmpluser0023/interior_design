@@ -43,31 +43,33 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"> <img src="{% static 'index/images/Dark Logo.png'%}" height="70px" width="210px" class="img img-responsive" alt=""> </a>
+            <a class="navbar-brand" href="{% url 'index' %}"> <img src="{% static 'index/images/Dark Logo.png'%}" height="70px" width="210px" class="img img-responsive" alt=""> </a>
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
             <div class="collapse navbar-collapse" id="mynav">
                 <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="{% url 'index' %}" class="nav-link " data-nav-section="home"><span><b>Home</b></span></a></li>
+                    <li class="nav-item"><a href="{% url 'index' %}" class="nav-link active" data-nav-section="home"><span><b>Home</b></span></a></li>
                     <li class="nav-item"><a href="{% url 'about' %}" class="nav-link" data-nav-section="about"><span><b>About</b></span></a></li>
                     <li class="nav-item"><a href="{% url 'services' %}" class="nav-link" data-nav-section="projects"><span><b>Services</b></span></a></li>
-                    <li class="nav-item"><a href="{% url 'projects' %}" class="nav-link active" data-nav-section="projects"><span><b>Projects</b></span></a></li>
+                    <li class="nav-item"><a href="{% url 'projects' %}" class="nav-link" data-nav-section="projects"><span><b>Projects</b></span></a></li>
                     <!--<li class="nav-item"><a href="#" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
                     <li class="nav-item"><a href="#" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
                     <li class="nav-item"><a href="#" class="nav-link" data-nav-section="blog"><span>Blog</span></a></li>-->
                     <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link" data-nav-section="contact"><span><b>Contact</b></span></a></li>
-                    <li class="nav-item cta"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#requestaquote" style="border-radius: 10px;">
+                    <li class="nav-item" >
+                        <a href="tel:9776344444" class="nav-link" ><button class="btn btn-warning" style="margin-top:-2px;"> Call now </button></a>
+                    </li>
+                    <li class="nav-item cta"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#requestaquote" style="border-radius: 5px;">
                         Request a quote
                       </button></li>
-                    <li class="nav-item">
-                        <a href="tel:9776344444" class="nav-link "><span><img src="{% static 'index/images/0e475bb9b17b3fa4f94f31fba1635b8f-telephone-call-icon-logo-by-vexels.png'%}" height="40" width="40" style="margin-top: -5px;" > <b>Call now</b></span></a>
-                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- Modal -->
     <div class="modal fade" id="requestaquote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

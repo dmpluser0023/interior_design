@@ -56,24 +56,26 @@
 
             <div class="collapse navbar-collapse" id="mynav">
                 <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="{% url 'index' %}" class="nav-link " data-nav-section="home"><span><b>Home</b></span></a></li>
+                    <li class="nav-item"><a href="{% url 'index' %}" class="nav-link active" data-nav-section="home"><span><b>Home</b></span></a></li>
                     <li class="nav-item"><a href="{% url 'about' %}" class="nav-link" data-nav-section="about"><span><b>About</b></span></a></li>
-                    <li class="nav-item"><a href="{% url 'services' %}" class="nav-link active" data-nav-section="projects"><span><b>Services</b></span></a></li>
-                    <li class="nav-item"><a href="{% url 'projects' %}" class="nav-link " data-nav-section="projects"><span><b>Projects</b></span></a></li>
+                    <li class="nav-item"><a href="{% url 'services' %}" class="nav-link" data-nav-section="projects"><span><b>Services</b></span></a></li>
+                    <li class="nav-item"><a href="{% url 'projects' %}" class="nav-link" data-nav-section="projects"><span><b>Projects</b></span></a></li>
                     <!--<li class="nav-item"><a href="#" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
                     <li class="nav-item"><a href="#" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
                     <li class="nav-item"><a href="#" class="nav-link" data-nav-section="blog"><span>Blog</span></a></li>-->
                     <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link" data-nav-section="contact"><span><b>Contact</b></span></a></li>
-                    <li class="nav-item cta"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#requestaquote" style="border-radius: 10px;">
+                    <li class="nav-item" >
+                        <a href="tel:9776344444" class="nav-link" ><button class="btn btn-warning" style="margin-top:-2px;"> Call now </button></a>
+                    </li>
+                    <li class="nav-item cta"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#requestaquote" style="border-radius: 5px;">
                         Request a quote
                       </button></li>
-                    <li class="nav-item">
-                        <a href="tel:9776344444" class="nav-link "><span><img src="{% static 'index/images/0e475bb9b17b3fa4f94f31fba1635b8f-telephone-call-icon-logo-by-vexels.png'%}" height="40" width="40" style="margin-top: -5px;" > <b>Call now</b></span></a>
-                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- Modal -->
     <div class="modal fade" id="requestaquote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -128,7 +130,7 @@
             <div class="row d-flex">
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                        <a href="single.html" class="block-20" style="background-image: url('static/index/images/3d Render.jpg');">
+                        <a href="single.html" class="block-20" style="background-image: url('static/index/images/3D render.webp');">
                         </a>
                         <div class="text mt-3 float-right d-block">
                             <!--<div class="d-flex align-items-center pt-2 mb-4 topp">
